@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 - Cambiar color de fondo al pasar el mouse</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        /* Estilos para los cambios de color de fondo */
+        .elementoLista {
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+        .elementoLista:hover {
+            background-color: yellow;
+        }
+        .elementoLista:nth-child(2):hover {
+            background-color: lightblue;
+        }
+        .elementoLista:nth-child(3):hover {
+            background-color: lightgreen;
+        }
+        .elementoLista:nth-child(4):hover {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <!-- Lista desordenada con elementos de -->
+    <ul>
+        <li class="elementoLista">En el mundo desolado de Helldriver, cada paso es una batalla por la supervivencia.</li>
+        <li class="elementoLista">Helldriver, la luz en medio de la noche eterna, desafía la oscuridad con valentía.</li>
+        <li class="elementoLista">La esperanza se eleva con cada revolución de la rueda de Helldriver, trayendo un nuevo amanecer.</li>
+        <li class="elementoLista">El rugido de los motores acompaña el camino de Helldriver hacia la victoria sobre el caos.</li>
+    </ul>
+</body>
+</html>
+

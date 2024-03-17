@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Ocultar y mostrar elemento con jQuery</title>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+
+        .oculto {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Elemento a ocultar -->
+    <div id="elementoOculto" class="oculto">
+        En un mundo devastado por el caos, solo los valientes se atreven a desafiar la oscuridad. Helldriver emprende su camino, decidida a convertir la desesperación en esperanza y restaurar la luz en medio de la noche eterna.
+    </div>
+
+  
+    <button id="mostrarElemento">Mostrar Elemento Oculto</button>
+
+  
+    <script>
+        $(document).ready(function(){
+            
+            $("#elementoOculto").hide();
+
+           
+            $("#mostrarElemento").click(function(){
+                $("#elementoOculto").show();
+            });
+        });
+    </script>
+</body>
+</html>

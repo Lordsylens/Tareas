@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 - Revelar contenido al hacer clic</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        /* Estilo para el contenido oculto */
+        #contenidoOculto {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Botón para revelar el contenido oculto -->
+    <button id="botonRevelar">Descubre más sobre Helldriver</button>
+
+    <!-- Elemento con contenido oculto -->
+    <div id="contenidoOculto">
+        <p>Helldriver es una feroz guerrera que atraviesa el paisaje desolado en su motocicleta, enfrentando a los enemigos y desafiando la oscuridad.</p>
+        <p>Su valentía y determinación son legendarias, y su misión es restaurar la esperanza en un mundo devastado por el caos.</p>
+        <p>Acompaña a Helldriver en su épica aventura llena de acción, peligro y sacrificio.</p>
+    </div>
+
+    
+    <script>
+        $(document).ready(function(){
+        
+            $("#botonRevelar").click(function(){
+                $("#contenidoOculto").slideDown();
+            });
+        });
+    </script>
+</body>
+</html>

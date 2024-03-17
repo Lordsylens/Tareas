@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Cambiar texto con jQuery</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Párrafo con texto inicial -->
+    <p id="textoParaCambiar">En el mundo desolado de Helldriver, cada paso es una batalla por la supervivencia.</p>
+
+    <!-- Botón para cambiar el texto -->
+    <button id="cambiarTexto">Cambiar Texto</button>
+
+  
+    <script>
+        $(document).ready(function(){
+            // Detectar clic en el botón y cambiar el texto del párrafo
+            $("#cambiarTexto").click(function(){
+                $("#textoParaCambiar").text("La oscuridad no puede detener a Helldriver; es la luz en medio de la noche eterna.");
+            });
+        });
+    </script>
+</body>
+</html>
